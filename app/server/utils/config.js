@@ -3,6 +3,7 @@ const args = require('./command-line-args');
 
 const defaults = {
 	debug: true,
+	ssl: false,
 	port: 3000,
 	secret: 'secret_123',
 	database: '',

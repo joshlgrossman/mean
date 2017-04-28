@@ -7,12 +7,10 @@ const config = require('../utils/config');
 const passportStrategy = require('../utils/passport-strategy');
 
 const User = require('../models/User');
-const Vote = require('../models/Vote');
 
 const router = express.Router();
 
 router.get('/profile', passport.authenticate('jwt', {session: false}), (req, res, next) => {
-	res.json({success: true, msg: 'profile'});
 });
 
 router.post('/authenticate', async (req, res, next) => {

@@ -8,7 +8,6 @@ const config = require('./utils/config');
 const passportStrategy = require('./utils/passport-strategy');
 
 const userRoute = require('./routes/user');
-const voteRoute = require('./routes/vote');
 
 mongoose.Promise = global.Promise;
 mongoose.connect(config.database);
@@ -27,7 +26,7 @@ const app = express()
 .use('/user', userRoute)
 .use('/vote', voteRoute);
 
-if(config.debug) app.listen(config.port, () => console.log(`Running on port ${config.port}`));
+if(!config.ssl) app.listen(config.port, () => console.log(`Running on port ${config.port}`));
 else {
 
 	const https = require('https');

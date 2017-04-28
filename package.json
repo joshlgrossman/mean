@@ -1,7 +1,7 @@
 {
   "name": "mean",
   "version": "1.0.0",
-  "description": "",
+  "description": "MEAN Starter Kit",
   "main": "app/server/server.js",
   "scripts": {
     "start": "node app/server/server.js",

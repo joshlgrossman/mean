@@ -3,9 +3,6 @@
 @import "normalize";
 @import "variables";
 @import "mixins";
-@import "header";
-@import "components/user";
-@import "components/vote";
 
 * {
 	box-sizing: border-box;
@@ -16,50 +13,6 @@
 	}
 }
 
-html {
-	font-family: @font-main;
-	color: @color-grey-very-dark;
-	background-color: @color-grey-very-light;
-}
-
 body {
 	margin: 0;
-}
-
-.content {
-	max-width: 1080px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-.button {
-	#button(@color: @color-green-dark, @important: false);
-
-	&.unimportant {
-		#button(@color: @color-blue, @important: false);
-	}
-
-	&.important {
-		#button(@background: @color-green);
-	}
-
-	&.warning {
-		#button(@background: @color-red);
-	}
-
-	&.disabled {
-		#button(@background: @color-grey, @hover: false);
-	}
-}
-
-.popup {
-	#popup();
-}
-
-.form-input {
-	#input();
-}
-
-.fa-close {
-	cursor: pointer;
 }
