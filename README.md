@@ -13,17 +13,17 @@ Configuration:
 -------------------
 Create `config.json` or provide command line arguments to override default configuration.
 
-  {
-    "debug": true,
-    "port": 3000,
-    "secret": "secret",
-    "database": "{{username}}:{{password}}@mydatabase",
-    "username": "Test",
-    "password": "password",
-    "ssl": false,
-    "cert": "path/to/cert",
-    "key": "path/to/key"
-  }
+```{
+  "debug": true,
+  "port": 3000,
+  "secret": "secret",
+  "database": "{{username}}:{{password}}@mydatabase",
+  "username": "Test",
+  "password": "password",
+  "ssl": false,
+  "cert": "path/to/cert",
+  "key": "path/to/key"
+}```
 
 Configuration precedence: defaults < config.json < command line arguments.
 
