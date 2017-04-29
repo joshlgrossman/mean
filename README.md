@@ -13,7 +13,8 @@ Configuration:
 -------------------
 Create `config.json` or provide command line arguments to override default configuration.
 
-```{
+```
+{
   "debug": true,
   "port": 3000,
   "secret": "secret",
@@ -23,7 +24,8 @@ Create `config.json` or provide command line arguments to override default confi
   "ssl": false,
   "cert": "path/to/cert",
   "key": "path/to/key"
-}```
+}
+```
 
 Configuration precedence: defaults < config.json < command line arguments.
 
