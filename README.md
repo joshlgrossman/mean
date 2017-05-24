@@ -40,7 +40,7 @@ Config.json:
 
 Command line arguments:
 
-`npm start debug=true sql_database_password=ABC123`
+`node app/server/server debug=true sql_database_password=ABC123`
 
 Configuration precedence: defaults < config.json < command line arguments.
 
