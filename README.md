@@ -64,3 +64,24 @@ The shell is a command line interface while the server is running.  It has built
 It also has commands for server up-time, current configuration settings, and more.  Use the `help` command to see all that is available.
 
 To run the application without the shell, add a command line argument of `no-shell`.
+
+Extending the shell:
+-------------------
+New shell commands can be easily created with the Command API.
+
+```
+Command.MyCommand = new Command({
+  aliases: ['array', 'of', 'command', 'aliases'], // the first is considered the default
+  help: 'The guide displayed when "help" command is run',
+  execute: args => {
+    // do something here
+  }
+});
+```
+
+For commands that are considered 'dangerous' or 'unstable', alternate constructors are available:
+```
+Command.MyDangerousCommand = new Command.Dangerous({/*...*/})
+Command.MyUnstableCommand = new Command.Unstable({/*...*/})
+```
+This will add warning messages to the shell's command listing.

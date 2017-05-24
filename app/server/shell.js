@@ -91,6 +91,15 @@ function start(){
   });
 }
 
+module.exports = !config['no-shell'] ?
+{authenticate, start, trace}
+:
+{
+  trace,
+  start(){ printHeader(false) },
+  authenticate(){}
+}
+
 function Command({aliases, help, execute = ()=>undefined}){
   if(typeof aliases === 'string') aliases = [aliases];
   aliases = aliases.map(alias => alias.toLowerCase());
@@ -226,12 +235,3 @@ Command.Cron = new Command.Unstable({
     }
   }
 });
-
-module.exports = !config['no-shell'] ?
-{authenticate, start, trace}
-:
-{
-  trace,
-  start(){ printHeader(false) },
-  authenticate(){}
-}
