@@ -9,9 +9,8 @@ Includes:
 * Socket.io for WebSockets
 * ORM for MySQL/MariaDB - Bookshelf.js
 * ODM for MongoDB - Mongoose.js
-* Gulp tasks for Babel and LESS compilation
+* Gulp tasks for Babel and LESS compilation with automatic AngularJS template injection
 * AngularJS services for `user` and `socket`
-* AngularJS template injection
 * Shell with extensible command API
 
 Configuration:
@@ -24,7 +23,7 @@ Config.json:
 {
   "debug": true,
   "port": 3000,
-	"secret": "abc@123",
+  "secret": "abc@123",
   "ssl": false,
   "ssl_key": "path/to/key",
   "ssl_cert": "path/to/cert",
