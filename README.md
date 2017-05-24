@@ -85,3 +85,11 @@ Command.MyDangerousCommand = new Command.Dangerous({/*...*/})
 Command.MyUnstableCommand = new Command.Unstable({/*...*/})
 ```
 This will add warning messages to the shell's command listing.
+
+Gulp tasks:
+-----------
+js - compile ES6, inject AngularJS templates, minify and compress to app.js
+less - compile LESS, minify and compress to styles.css
+html - copy index.html into build folder
+build - [js,less,html]
+watch *(default)* - build and watch
