@@ -1,16 +1,14 @@
-// main: styles.less
-
-#center(){
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+#fill-container(@padding: 0){
+  position: absolute;
+  top: @padding;
+  left: @padding;
+  right: @padding;
+  bottom: @padding;
 }
 
-#cover(@position: absolute){
-	position: @position;
-	left: 0;
-	right: 0;
-	top: 0;
-	bottom: 0;
+#center(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
