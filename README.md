@@ -13,6 +13,13 @@ Includes:
 * AngularJS services for `user` and `socket`
 * Shell with extensible command API
 
+Getting started:
+----------------
+1. clone repo
+2. `npm install`
+3. `gulp`
+4. `node app/server/server`
+
 Configuration:
 -------------------
 Create `config.json` or provide command line arguments to override default configuration.
