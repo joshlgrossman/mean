@@ -22,7 +22,7 @@ Getting started:
 
 Configuration:
 -------------------
-Create `config.json` or provide command line arguments to override default configuration.
+Create `config.json` in root directory of the project or provide command line arguments to override default configuration.
 
 Config.json:
 
