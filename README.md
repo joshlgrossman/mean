@@ -37,7 +37,7 @@ Config.json:
   "sql_database_host": "localhost",
   "sql_database_user": "root",
   "sql_database_password": "",
-  "sql_database_name": "",
+  "sql_database_name": "mean_db",
   "nosql_database_host": "localhost",
   "nosql_database_user": "root",
   "nosql_database_password": "",
