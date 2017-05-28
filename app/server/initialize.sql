@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS gross_chat;
-CREATE DATABASE gross_chat;
+DROP DATABASE IF EXISTS mean_db;
+CREATE DATABASE mean_db;
 
-USE gross_chat;
+USE mean_db;
 
 DROP TABLE IF EXISTS users;
 CREATE TABLE users (
